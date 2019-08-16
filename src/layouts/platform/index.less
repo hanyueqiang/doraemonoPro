@@ -1,0 +1,105 @@
+@import '../../themes/index.less';
+
+.wrap {
+    min-height: 100vh;
+
+    /***侧边栏***/
+    .sider {
+        height: 100vh;
+        position: fixed;
+        left: 0;
+    }
+
+    /***系统主体部分***/
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        /***系统头部***/
+        .contentHeader {
+            background: #fff;
+            padding: 0;
+            display: flex;
+            justify-content: space-between
+        }
+
+        /***系统内容区域***/
+        .content {
+            flex: auto;
+            margin: 10px 16px;
+            margin-bottom: 0;
+            display: flex;
+        }
+    }
+}
+
+
+
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.trigger:hover {
+    color: #1890ff;
+}
+
+
+
+.logo {
+    height: 64px;
+    background: #002140;
+    padding: 10px 16px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /*初始状态 透明度为0*/
+    }
+
+    50% {
+        opacity: 0.5;
+        /*中间状态 透明度为0*/
+    }
+
+    100% {
+        opacity: 1;
+        /*结尾状态 透明度为1*/
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /*初始状态 透明度为0*/
+    }
+
+    50% {
+        opacity: 0.5;
+        /*中间状态 透明度为0*/
+    }
+
+    100% {
+        opacity: 1;
+        /*结尾状态 透明度为1*/
+    }
+}
+
+.animation {
+    /*动画名称*/
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    /*动画持续时间*/
+    animation-duration: 0.6s;
+    -webkit-animation-duration: 0.6s;
+    /*动画次数*/
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    /*延迟时间*/
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}

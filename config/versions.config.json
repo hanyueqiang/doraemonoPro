@@ -1,0 +1,166 @@
+[
+    {
+        "version": "v1.0.0-Alpha.1",
+        "date": "2018-08-01",
+        "detail": {
+            "framework": [
+                "使用antd组件库全新UI设计",
+                "前后端分离，组件化开发",
+                "数据模型统一",
+                "兼容老版本系统"
+            ],
+            "pages": [
+                "老版系统页面配置"
+            ]
+        }
+    },
+    {
+        "version": "v1.0.0-Alpha.2",
+        "date": "2018-09-01",
+        "detail": {
+            "framework": [
+                "新增echarts可视化图形组件",
+                "修复前后端接口跨域数据请求",
+                "修复浏览器兼容问题",
+                "新增代码分包按需加载，减少文件请求大小，优化用户体验"
+            ],
+            "pages": []
+        }
+    },
+    {
+        "version": "v1.0.0-Beta",
+        "date": "2018-09-10",
+        "detail": {
+            "framework": [
+                "优化layouts系统骨架",
+                "新增面包屑功能",
+                "新增全局公告功能",
+                "新增消息通知功能",
+                "新增菜单全局搜索功能"
+            ],
+            "pages": []
+        }
+    },
+    {
+        "version": "v1.0.0",
+        "date": "2018-09-21",
+        "detail": {
+            "framework": [
+                "升级框架插件，全面使用umi框架，完善的插件体系，与 dva 数据流的深入融合，支持 duck directory、model 的自动加载、code splitting 等等",
+                "优化路由管理，使用约定式路由"
+            ],
+            "pages": []
+        }
+    },
+    {
+        "version": "v1.0.1",
+        "date": "2018-10-19",
+        "detail": {
+            "framework": [],
+            "pages": [
+                "新增匹配额度分析",
+                "新增路径分析"
+            ]
+        }
+    },
+    {
+        "version": "v1.0.2",
+        "date": "2018-11-25",
+        "detail": {
+            "framework": [
+                "优化404页面",
+                "新增版本说明"
+            ],
+            "pages": [
+                "地域分析"
+            ]
+        }
+    },
+    {
+        "version": "v1.0.3",
+        "date": "2018-12-05",
+        "detail": {
+            "framework": [
+                "优化page组件",
+                "优化header组件，支持dark、light两种主题",
+                "新增layout布局"
+            ],
+            "pages": []
+        }
+    },
+    {
+        "version": "v1.1.0",
+        "date": "2019-01-24",
+        "detail": {
+            "framework": [
+                "通过createFromIconfontCN创建MyIcon",
+                "新增d3.v4.js图形库",
+                "新增d3树图、桑基图"
+            ],
+            "pages": []
+        }
+    },
+    {
+        "version": "v1.1.1",
+        "date": "2019-02-11",
+        "detail": {
+            "framework": [
+                "重构pageHeader组件",
+                "重构pageWrapper组件",
+                "新增Footer组件"
+            ],
+            "pages": []
+        }
+    },
+    {
+        "version": "v1.1.2",
+        "date": "2019-02-11",
+        "detail": {
+            "framework": [
+                "重构pageHeader组件",
+                "重构pageWrapper组件",
+                "新增Footer组件",
+                "新增GlobalFooter组件",
+                "更新basicLayout",
+                "更新Login组件"
+            ],
+            "pages": []
+        }
+    },
+    {
+        "version": "v1.2.0",
+        "date": "2019-02-14",
+        "detail": {
+            "framework": [
+                "升级umi@2.4、react、react-dom等技术栈",
+                "新增react-test-renderer插件组件测试",
+                "修复升级后系统bug",
+                "优化fetch请求"
+            ],
+            "pages": []
+        }
+    },
+    {
+        "version": "v1.2.1",
+        "date": "2019-02-14",
+        "detail": {
+            "framework": [
+                "新增国际化多语言配置"
+            ],
+            "pages": []
+        }
+    },
+    {
+        "version": "v1.2.2",
+        "date": "2019-03-15",
+        "detail": {
+            "framework": [
+                "修改首页配置",
+                "echarts组件库开发"
+            ],
+            "pages": [
+                "新增githubDataV数据可视化页面"
+            ]
+        }
+    }
+]
