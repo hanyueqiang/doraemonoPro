@@ -1,10 +1,3 @@
-
-/**
- * @author M
- * @email mpw0311@163.com
- * @version  1.0.0
- * @description  菜单栏model
- */
 import * as api from '../services';
 import orginalData from '@menuConfig';
 import { munesFilter, flattenMenu } from '@utils/_';
