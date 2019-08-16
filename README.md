@@ -11,15 +11,11 @@
 ![antd-umi-sys](src/assets/d3tree.png) -->
 
 ## 技术栈 
-   react+umi+dva+antd+less
+   React + Umi + Dva + Antd + Less
 ## 特性
-+ 单页面应用；
-+ 模块化、组件化开发；
-+ 结合dva基于 redux 和 redux-saga 的数据流方案；
-+ 约定式路由，无需再维护一份冗余的路由配置，支持权限、动态路由、嵌套路由等；
-+ 插件化，一键实现按需加载、兼容 ie9 、切换 preact等；
-+ 开箱即用，无需安装 react、preact、webpack、react-router、babel、jest 等；
-+ 丰富的Echarts图形组件；
++ 模块化、组件化开发
++ 结合dva基于 redux 和 redux-saga 的数据流方案
++ 约定式路由，无需再维护一份冗余的路由配置，支持权限、动态路由、嵌套路由等
 + mock模拟数据请求
 ---
 ## 环境准备
@@ -31,7 +27,7 @@
         $ umi -v
         2.0.0
     3.git地址下载脚手架代码：
-        git@github.com:hanyueqiang/doraemonoPro.git
+        https://github.com/hanyueqiang/doraemonoPro.git
     4.安装依赖模块：
         yarn
     5.启动本地开发：
