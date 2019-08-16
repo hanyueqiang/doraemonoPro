@@ -7,7 +7,7 @@ import logo from '../../assets/logo.png';
 class Index extends PureComponent {
     render() {
         const { collapsed } = this.props;
-        const imgLogo = <img src={logo} alt="pro" style={{ height: '32px' }} />;
+        const imgLogo = <img src={logo} alt="pro" style={{ height: '28px' }} />;
         let logoPage;
         if (collapsed) {
             logoPage = imgLogo;
@@ -18,9 +18,9 @@ class Index extends PureComponent {
                         {imgLogo}
                     </Col>
                     <Col span={17} >
-                        <h2 className={styles.animation} style={{ height: '44px', lineHeight: '44px', fontSize: '18px', color: '#efefef' }}>
+                        <div className={styles.animation} style={{ height: '44px', lineHeight: '44px', textAlign: 'left', fontSize: '18px', color: '#efefef' }}>
                             {sysName}
-                        </h2>
+                        </div>
                     </Col>
                 </Row>
             );
