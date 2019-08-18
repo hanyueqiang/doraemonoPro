@@ -1,8 +1,8 @@
 const Mock = require('mockjs');
 const menuData = [
     {
-        title: "gitDataV",
-        key: "gitDataV",
+        title: "dashboard",
+        key: "dashboard",
     },
     {
         title: "地域分析",

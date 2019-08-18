@@ -27,10 +27,10 @@ module.exports = {
     iconUrl: '//at.alicdn.com/t/font_1030595_depmdbpf3yc.js',
     // 系统默认首页
     sysDefultPage: {
-        pathname: '/sys/githubpro',
+        pathname: '/sys/dashboard',
         state: {
-            key: 'gitDataV',
-            pathtitles: [{ title: 'gitDataV', icon: 'github' }],
+            key: 'dashboard',
+            pathtitles: [{ title: 'dashboard', icon: 'github' }],
         }
     },
 };
