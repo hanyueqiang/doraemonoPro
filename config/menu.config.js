@@ -1,8 +1,8 @@
 export default [
     {
-        title: "gitDataV",
-        link: "/sys/githubpro",
-        key: "gitDataV",
+        title: "dashboard",
+        link: "/sys/dashboard",
+        key: "dashboard",
         icon: "github"
     },
     {
