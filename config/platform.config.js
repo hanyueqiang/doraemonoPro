@@ -30,7 +30,7 @@ module.exports = {
         pathname: '/sys/dashboard',
         state: {
             key: 'dashboard',
-            pathtitles: [{ title: 'dashboard', icon: 'github' }],
+            pathtitles: [{ title: 'dashboard', icon: 'dashboard' }],
         }
     },
 };

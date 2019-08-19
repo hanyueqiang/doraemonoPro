@@ -5,6 +5,10 @@ const menuData = [
         key: "dashboard",
     },
     {
+        title: "canvas",
+        key: "canvas",
+    },
+    {
         title: "地域分析",
         key: "regionalAnalysis",
     },

@@ -24,9 +24,10 @@ const GlobalFooter = ({ className, links, copyright }) => {
               {link.title}
             </a>
           ))}
+          {copyright && <span className={styles.copyright}>{copyright}</span>}
         </div>
       )}
-      {copyright && <div className={styles.copyright}>{copyright}</div>}
+      {/* {copyright && <div className={styles.copyright}>{copyright}</div>} */}
     </footer>
   );
 };
