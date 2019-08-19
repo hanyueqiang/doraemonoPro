@@ -9,6 +9,10 @@ const menuData = [
         key: "canvas",
     },
     {
+        title: "gitDataV",
+        key: "gitDataV",
+    },
+    {
         title: "地域分析",
         key: "regionalAnalysis",
     },

@@ -11,6 +11,12 @@ export default [
         key: "canvas",
         icon: "fund"
     },
+    {
+        title: "gitDataV",
+        link: "/sys/githubpro",
+        key: "gitDataV",
+        icon: "github"
+    },
     // {
     //     title: "地域分析",
     //     link: "/sys/regionalAnalysis",
