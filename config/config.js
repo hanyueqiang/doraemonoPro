@@ -18,6 +18,8 @@ export default {
   externals: {
     // echarts: 'window.echarts',
     d3: 'window.d3',
+    $: 'window.$',
+    _: 'window._'
   },
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html

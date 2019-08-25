@@ -106,3 +106,24 @@ body::-webkit-scrollbar-track {
 .progressbar::-webkit-scrollbar-track {
   /*滚动条里面轨道*/
 }
+.pl-20{
+  padding-left:20px
+  }
+  text{
+    cursor:pointer;
+    max-width: 25px;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+  }
+  circle{
+    cursor:pointer;
+  }
+  #graphcontainerdiv{
+   background:#fff;
+  }
+  .circle_opreate{
+    display: none;
+  }

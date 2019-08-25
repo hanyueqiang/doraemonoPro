@@ -24,7 +24,7 @@ export default [
         icon: "idcard"
     },
     {
-        title: "用户行为",
+        title: "图表分析",
         key: "yonghuxingwei",
         icon: "contacts",
         children: [
@@ -104,7 +104,7 @@ export default [
         ]
     },
     {
-        title: "d3.js组件",
+        title: "d3",
         key: "d3Chart",
         icon: "icon-baobiaofenxi",
         children: [
@@ -112,6 +112,18 @@ export default [
                 title: "树图",
                 link: "/sys/treePage",
                 key: "treePage",
+                icon: "icon-tree"
+            },
+            {
+                title: "力导向图1",
+                link: "/sys/force",
+                key: "force",
+                icon: "icon-tree"
+            },
+            {
+                title: "力导向图2",
+                link: "/sys/force2",
+                key: "force2",
                 icon: "icon-tree"
             },
             {
@@ -123,7 +135,7 @@ export default [
         ]
     },
     {
-        title: "用户分析",
+        title: "Table",
         link: "/sys/users",
         key: "users",
         icon: "user"

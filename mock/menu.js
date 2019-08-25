@@ -8,14 +8,14 @@ const menuData = [
         title: "canvas",
         key: "canvas",
     },
-    {
-        title: "gitDataV",
-        key: "gitDataV",
-    },
-    {
-        title: "地域分析",
-        key: "regionalAnalysis",
-    },
+    // {
+    //     title: "gitDataV",
+    //     key: "gitDataV",
+    // },
+    // {
+    //     title: "地域分析",
+    //     key: "regionalAnalysis",
+    // },
     {
         title: "users",
         key: "users",
@@ -25,13 +25,13 @@ const menuData = [
         key: "404",
     },
     {
-        title: "用户行为",
+        title: "图表分析",
         key: "yonghuxingwei",
         children: [
-            {
-                title: "路径分析",
-                key: "pathAnalysis",
-            },
+            // {
+            //     title: "路径分析",
+            //     key: "pathAnalysis",
+            // },
             {
                 title: "view1",
                 key: "p1",
@@ -54,18 +54,18 @@ const menuData = [
                 key: 'line',
                 title: 'Line'
             },
-            {
-                key: 'area',
-                title: 'Area'
-            },
-            {
-                key: 'yBar',
-                title: 'YBar'
-            },
-            {
-                key: 'funnel',
-                title: 'Funnel'
-            },
+            // {
+            //     key: 'area',
+            //     title: 'Area'
+            // },
+            // {
+            //     key: 'yBar',
+            //     title: 'YBar'
+            // },
+            // {
+            //     key: 'funnel',
+            //     title: 'Funnel'
+            // },
             {
                 key: 'pie',
                 title: 'Pie'
@@ -84,9 +84,17 @@ const menuData = [
         title: "d3.js组件",
         key: "d3Chart",
         children: [
+            // {
+            //     title: "树图",
+            //     key: "treePage",
+            // },
             {
-                title: "树图",
-                key: "treePage",
+                title: "力导向图1",
+                key: "force",
+            },
+            {
+                title: "力导向图2",
+                key: "force2",
             },
         ]
     },
@@ -100,10 +108,10 @@ const menuData = [
             }
         ]
     },
-    {
-        title: "图形组件",
-        key: "react-charts",
-    },
+    // {
+    //     title: "图形组件",
+    //     key: "react-charts",
+    // },
     // {
     //     title: "请给star",
     //     key: "github",
