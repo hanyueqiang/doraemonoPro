@@ -17,7 +17,7 @@ let nodetextGroup;
 let nodesymbolGroup;
 let simulation;
 const jsondata = {
-	"node": [
+	node: [
 		{ "filter": [], "showstyle": "0", "entitytype": "0", "name": "云知声", "uuid": "18147394" },
 		{ "filter": [], "showstyle": "0", "entitytype": "0", "name": "IoT行业应用", "uuid": "18147395" },
 		{ "filter": [], "showstyle": "0", "entitytype": "0", "name": "AI Labs", "uuid": "18147401" },
@@ -42,9 +42,9 @@ const jsondata = {
 		{ "filter": [], "showstyle": "0", "entitytype": "1", "name": "N6", "uuid": "18147420" },
 		{ "filter": [], "showstyle": "0", "entitytype": "1", "name": "N5", "uuid": "18147421" },
     ],
-    "relationship":[
-        {"sourceid":"18147380","targetid":"18147392","name":"下位","uuid":"48723709"},
-        {"sourceid":"18147380","targetid":"18147393","name":"下位","uuid":"48723710"}
+    relationship:[
+        {"sourceid":"18147394","targetid":"18147395","name":"","uuid":"48723709"},
+        {"sourceid":"18147394","targetid":"18147401","name":"","uuid":"48723710"}
     ]
 };
 
@@ -160,40 +160,40 @@ export default class index extends Component {
             if (typeof (targetNode) == 'undefined') return;
             links.push({ source: sourceNode.uuid, target: targetNode.uuid, lk: m });
         });
-        // if (links.length > 0) {
-        //     _.each(links, function (link) {
-        //         var same = _.where(links, {
-        //             'source': link.source,
-        //             'target': link.target
-        //         });
-        //         var sameAlt = _.where(links, {
-        //             'source': link.target,
-        //             'target': link.source
-        //         });
-        //         var sameAll = same.concat(sameAlt);
-        //         _.each(sameAll, function (s, i) {
-        //             s.sameIndex = (i + 1);
-        //             s.sameTotal = sameAll.length;
-        //             s.sameTotalHalf = (s.sameTotal / 2);
-        //             s.sameUneven = ((s.sameTotal % 2) !== 0);
-        //             s.sameMiddleLink = ((s.sameUneven === true) && (Math.ceil(s.sameTotalHalf) === s.sameIndex));
-        //             s.sameLowerHalf = (s.sameIndex <= s.sameTotalHalf);
-        //             s.sameArcDirection = 1;
-        //             //s.sameArcDirection = s.sameLowerHalf ? 0 : 1;
-        //             s.sameIndexCorrected = s.sameLowerHalf ? s.sameIndex : (s.sameIndex - Math.ceil(s.sameTotalHalf));
-        //         });
-        //     });
-        //     var maxSame = _.chain(links)
-        //         .sortBy(function (x) {
-        //             return x.sameTotal;
-        //         })
-        //         .last()
-        //         .value().sameTotal;
+        if (links.length > 0) {
+            _.each(links, function (link) {
+                var same = _.filter(links, _.matches({
+                    'source': link.source,
+                    'target': link.target
+                }));
+                var sameAlt = _.filter(links,  _.matches({
+                    'source': link.target,
+                    'target': link.source
+                }));
+                var sameAll = same.concat(sameAlt);
+                _.each(sameAll, function (s, i) {
+                    s.sameIndex = (i + 1);
+                    s.sameTotal = sameAll.length;
+                    s.sameTotalHalf = (s.sameTotal / 2);
+                    s.sameUneven = ((s.sameTotal % 2) !== 0);
+                    s.sameMiddleLink = ((s.sameUneven === true) && (Math.ceil(s.sameTotalHalf) === s.sameIndex));
+                    s.sameLowerHalf = (s.sameIndex <= s.sameTotalHalf);
+                    s.sameArcDirection = 1;
+                    //s.sameArcDirection = s.sameLowerHalf ? 0 : 1;
+                    s.sameIndexCorrected = s.sameLowerHalf ? s.sameIndex : (s.sameIndex - Math.ceil(s.sameTotalHalf));
+                });
+            });
+            var maxSame = _.chain(links)
+                .sortBy(function (x) {
+                    return x.sameTotal;
+                })
+                .last()
+                .value().sameTotal;
 
-        //     _.each(links, function (link) {
-        //         link.maxSameHalf = Math.round(maxSame / 2);
-        //     });
-        // }
+            _.each(links, function (link) {
+                link.maxSameHalf = Math.round(maxSame / 2);
+            });
+        }
         // 更新连线 links
         var link = linkGroup.selectAll(".line >path").data(links, function (d) {
             return d.uuid;
