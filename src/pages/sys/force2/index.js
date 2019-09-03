@@ -211,16 +211,16 @@ export default class index extends Component {
             return d.lk.name;
         });
         // 更新节点按钮组
-        d3.selectAll(".nodebutton  >g").remove();
+        d3.selectAll(".nodebutton >g").remove();
         var nodebutton = nodebuttonGroup.selectAll(".nodebutton").data(nodes, function (d) {
-            return d
+            return d;
         });
         nodebutton.exit().remove();
         var nodebuttonEnter = _this.drawnodebutton(nodebutton);
         nodebutton = nodebuttonEnter.merge(nodebutton);
         // 更新节点
         var node = nodeGroup.selectAll("circle").data(nodes, function (d) {
-            return d
+            return d;
         });
         node.exit().remove();
         var nodeEnter = _this.drawnode(node);
@@ -229,7 +229,7 @@ export default class index extends Component {
         });
         // 更新节点文字
         var nodetext = nodetextGroup.selectAll("text").data(nodes, function (d) {
-            return d.uuid
+            return d.uuid;
         });
         nodetext.exit().remove();
         var nodetextEnter = _this.drawnodetext(nodetext);
