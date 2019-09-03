@@ -26,8 +26,6 @@ class Content extends Component {
 
   render() {
     const { canvasContent, defectsSource } = this.props;
-    console.log(canvasContent)
-    console.log(defectsSource)
     return (
       <div className={styles.canvas_content}>
         <canvas className="myCanvas" style={{ position: 'absolute', zIndex: 999, left: 0, right: 0, top: 0, bottom: 0, pointerEvents: 'none' }}></canvas>

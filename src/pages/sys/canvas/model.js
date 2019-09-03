@@ -6,7 +6,9 @@ export default {
   namespace: 'medical',
 
   state: {
-
+    canvasContent: {
+    },
+    defectsSource: []
   },
 
   subscriptions: {
