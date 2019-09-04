@@ -98,6 +98,7 @@ class Content extends Component {
         }
         timeout = setTimeout(handleScroll, 150);
       }
+      //js监听div宽度变化
       let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
       let element = document.querySelector('.ant-layout-sider-dark');
       let observer = new MutationObserver(() => {
