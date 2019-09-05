@@ -197,16 +197,16 @@ class Content extends Component {
           <Col md={17} lg={17} xl={17} >
             <Card
               title={'副主任医师查房记录'}
-              style={{ marginTop: 20, height: 510 }}
+              style={{ height: 410 }}
             >
               <div style={{ fontSize: 14, textAlign: 'center', marginBottom: 6 }}>{canvasContent.info}</div>
-              <div style={{ fontSize: 14, lineHeight: '22px' }} className="light-content" dangerouslySetInnerHTML={{ __html: canvasContent.content }}></div>
+              <div style={{ fontSize: 14, lineHeight: '22px',padding:4 }} className="light-content" dangerouslySetInnerHTML={{ __html: canvasContent.content }}></div>
             </Card>
           </Col>
           <Col md={7} lg={7} xl={7} >
             <Card
               title={'缺陷列表'}
-              style={{ marginTop: 20, height: 510, overflow: 'hidden' }}
+              style={{ height: 410, overflow: 'hidden' }}
             >
               {defectsSource.map(item => <div onClick={this.lightHandle.bind(this, item)} className={`${styles.rightCard} ${lightKey === item.lightKey ? 'lightRight' : ''}`} key={item.id}>{item.name}</div>)}
             </Card>
