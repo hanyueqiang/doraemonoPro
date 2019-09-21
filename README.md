@@ -1,14 +1,17 @@
 # doraemon-pro
 
+***如果你喜欢这个项目请给一个⭐，谢谢!***
+
+***Please give me a Star if you like this project.Thank you so much.***
+
 ## 简介
     企业后台管理系统，数据可视化平台。
     推荐浏览器：Google Chrome
     
-<!-- ![antd-umi-sys](src/assets/demo_login.png)
-![antd-umi-sys](src/assets/demo.png)
-![antd-umi-sys](src/assets/regionalAnalysis.png)
-![antd-umi-sys](src/assets/vew1.png)
-![antd-umi-sys](src/assets/d3tree.png) -->
+![doraemon-pro](src/assets/demo_login.png)
+![doraemon-pro](src/assets/demo_canvas.jpg)
+![doraemon-pro](src/assets/demo_draft.jpg)
+![doraemon-pro](src/assets/vew1.png)
 
 ## 技术栈 
    React + Umi + Dva + Antd + Less
