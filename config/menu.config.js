@@ -141,6 +141,12 @@ export default [
         icon: "user"
     },
     {
+        title: "拖拽排序",
+        link: "/sys/tableSort",
+        key: "tableSort",
+        icon: "retweet"
+    },
+    {
         title: "404",
         link: "/404",
         key: "404",

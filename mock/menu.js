@@ -25,6 +25,10 @@ const menuData = [
         key: "404",
     },
     {
+        title: "table拖拽排序",
+        key: "tableSort",
+    },
+    {
         title: "图表分析",
         key: "yonghuxingwei",
         children: [
