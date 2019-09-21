@@ -26,12 +26,16 @@ circle{
 .circle_opreate{
 	display: none;
 }
+.graphcontainer {
+	width: 800px;
+	height: 600px;
+}
 </style>
 </head>
 
 <body>
 	<div  id="app" class="mind-con">
-     <div id="graphcontainer"  class="graphcontainer"></div>
+     <div id="graphcontainer"  class="graphcontainer" ></div>
         <div class="svg-set-box"></div>
 	</div>
 </body>
@@ -150,7 +154,9 @@ circle{
 	        initgraph(){
 	            var graphcontainer = d3.select(".graphcontainer");
 	            var width = graphcontainer._groups[0][0].offsetWidth;
-	            var height = window.screen.height - 154;//
+				var height = window.screen.height - 154;//
+				console.log(width)
+				console.log(height)
 	            this.svg = graphcontainer.append("svg");
 	            this.svg.attr("width", width);
 	            this.svg.attr("height", height);
@@ -162,7 +168,8 @@ circle{
 	                }))
 	                .force("charge", d3.forceManyBody().strength(-400))
 	                .force("collide", d3.forceCollide().strength(-30))
-	                .force("center", d3.forceCenter(width / 2, (height - 200) / 2));
+					.force("center", d3.forceCenter(width / 2, (height - 200) / 2))
+
 	            this.linkGroup = this.svg.append("g").attr("class", "line");
 	            this.linktextGroup = this.svg.append("g").attr("class", "linetext");
 	            this.nodeGroup = this.svg.append("g").attr("class", "node");
