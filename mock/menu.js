@@ -8,6 +8,10 @@ const menuData = [
         title: "canvas",
         key: "canvas",
     },
+    {
+        title: "watermark",
+        key: "watermark",
+    },
     // {
     //     title: "gitDataV",
     //     key: "gitDataV",

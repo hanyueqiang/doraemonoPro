@@ -12,6 +12,12 @@ export default [
         icon: "fund"
     },
     {
+        title: "watermark",
+        link: "/sys/watermark",
+        key: "watermark",
+        icon: "file-image"
+    },
+    {
         title: "gitDataV",
         link: "/sys/githubpro",
         key: "gitDataV",
