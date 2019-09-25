@@ -8,9 +8,9 @@ export default class Index extends React.Component {
   render() {
     return (
       <div style={{ padding: 15 }}>
-        <Block vertical="center" horizontal="center">
+        {/* <Block vertical="center" horizontal="center">
           <GitHub />
-        </Block>
+        </Block> */}
         <Main />
         {/* <Donation /> */}
       </div>

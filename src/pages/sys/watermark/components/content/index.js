@@ -120,7 +120,7 @@ export default class Index extends React.Component {
   };
   render() {
     return (
-      <Block className={styles.main_box} style={{ marginTop: 30 }}>
+      <Block className={styles.main_box}>
         {this.renderControl()}
         <div className={styles.canvas_box} style={{ flex: 1, minWidth: 345 }}>
           <canvas style={{ width: "100%" }} ref={mainCanvas => (this.mainCanvas = mainCanvas)} />
