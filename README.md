@@ -10,6 +10,7 @@
     
 ![doraemon-pro](src/assets/demo_login.png)
 ![doraemon-pro](src/assets/demo_canvas.jpg)
+![doraemon-pro](src/assets/watermark.png)
 ![doraemon-pro](src/assets/demo_draft.jpg)
 ![doraemon-pro](src/assets/vew1.png)
 
